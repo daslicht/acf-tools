@@ -12,19 +12,21 @@ function load_fonts() {
 
 add_action('wp_print_styles', 'load_fonts');
 
-
-function footer_sidebar() {
-
-	$args = array(
-		'id'            => 'footer',
-		'name'          => __( 'Footer', 'sds' ),
-		'description'   => __( 'A widget area in the footer (duh!)', 'sds' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-	);
-	register_sidebar( $args );
-
-}
-
 // Hook into the 'widgets_init' action
 add_action( 'widgets_init', 'footer_sidebar',50 );
+
+
+/*  
+ * Advanced Custom Fields stuff
+*/
+
+// add theme options page
+
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page( array (
+                     'page_title' => 'WAGW Theme Options',
+                     'page_slug'  => 'wagw_options',
+                     'autoload'   => true,
+                      )
+                     );
+}

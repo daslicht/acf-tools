@@ -14,7 +14,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php dynamic_sidebar('footer'); ?>
+            <?php the_field('wagw_footer', 'option'); ?>
 	</footer><!-- .site-footer -->
 
 </div><!-- .site -->

@@ -1,0 +1,49 @@
+/*
+ Theme Name:   2015 Child
+ Description:  2015 Child Theme
+ Author:       Steven Stern
+ Author URI:   http://www.sterndata.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  2015-child
+*/
+
+body,
+button,
+input,
+select,
+textarea,
+html {
+    font-family: 'Raleway','Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.site-description {
+    font-family: 'Bitter', serif;
+}
+ul, ol {
+    margin-left: 2em;
+}
+blockquote {
+    font-size: 1.75rem;
+    margin-left: 1.25em;
+}
+.site-footer .widget {
+    margin-bottom: 0;
+}
+#colophon {
+    margin-bottom: 1em;
+}
+.entry-content img {
+   box-shadow: 0 0 15px #ccc;
+}
+.wp-caption-text {
+   font-style: italic;
+   font-size: 80%;
+   text-align:center;
+}
+.jetpack-video-wrapper .twitter-tweet-rendered{
+   width: 100% !important;
+}

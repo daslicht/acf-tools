@@ -47,3 +47,7 @@ blockquote {
 .jetpack-video-wrapper .twitter-tweet-rendered{
    width: 100% !important;
 }
+
+.site-title, .site-description {
+   text-align:center;
+}

@@ -12,9 +12,6 @@ function load_fonts() {
 
 add_action('wp_print_styles', 'load_fonts');
 
-// Hook into the 'widgets_init' action
-add_action( 'widgets_init', 'footer_sidebar',50 );
-
 
 /*  
  * Advanced Custom Fields stuff

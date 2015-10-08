@@ -51,3 +51,12 @@ blockquote {
 .site-title, .site-description {
    text-align:center;
 }
+
+// flexslider 
+.flexslider ul.slides {
+    list_style:none;
+    margin:0;
+}
+#carousel.flexslider {
+    display:none;
+}

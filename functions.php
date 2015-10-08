@@ -27,3 +27,14 @@ if( function_exists('acf_add_options_page') ) {
                       )
                      );
 }
+
+// if using the page-hero template, enqueue flexsider
+
+function wagw_flexslider_gallery_scripts() {
+   if ( is_page_template( 'page-hero.php' ) ) {
+       wp_enqueue_script( 'jquery' );
+       wp_register_script('flexslider', get_stylesheet_directory_uri() . '/flexslider/jquery.flexslider-min.js', array( 'jquery' ), false, true);
+       wp_enqueue_script( 'flexslider' );
+      }
+}
+add_action( 'wp_enqueue_scripts', 'wagw_flexslider_gallery_scripts');

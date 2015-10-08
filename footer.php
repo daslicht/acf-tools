@@ -14,8 +14,13 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-            <?php the_field('wagw_footer', 'option'); ?>
-	</footer><!-- .site-footer -->
+	<?php                           
+           // insert header stuff if set in options
+              if ( function_exists( 'the_field' ) ) {
+                 the_field('wagw_footer', 'option'); 
+               } 
+        ?>
+</footer><!-- .site-footer -->
 
 </div><!-- .site -->
 
